@@ -1,0 +1,34 @@
+HOW TO USE: brain-append
+=========================
+
+PURPOSE
+  Add dated progress notes, milestones, or follow-up details to an existing
+  Second Brain memory without overwriting its original content.
+
+CAPABILITIES
+  - Appends text with automatic date-stamping to preserve change history
+  - Preserves original entry content and existing tags
+  - Direct command execution carries automatic permission
+
+USE CASES
+  - Adding a verification note after testing an architectural change
+  - Marking a sub-task completed on an existing project memory
+  - Adding a newly discovered edge case to a documented bug entry
+
+IDEAS
+  - Keep running history on major project entries rather than creating dozens of fragmented duplicates
+  - Use `/brain-recall` or `/brain-recent` to find the target ID first
+
+PROMPTS YOU CAN PASTE
+  /brain-append mem_8f93a1 Added OSC handshake fallback on reconnect
+
+  /brain-append mem_abc123 Tested with Live 12 — works correctly #verified
+
+EXAMPLE FLOW
+  You: /brain-append mem_8f93a1 Added OSC handshake fallback on reconnect
+  Agent: [Executes append tool immediately, confirms dated update added to mem_8f93a1]
+
+DEFAULT GOALS IF YOU DON'T NAME ONE
+  1. Parse target ID and appended note text
+  2. Execute append MCP tool immediately
+  3. Report confirmed update to target memory
